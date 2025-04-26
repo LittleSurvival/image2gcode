@@ -1,9 +1,6 @@
 from .raster_svg_converter import RasterSVGConverter
 
 class ImageConverter:
-    """
-    影像→SVG 的前置轉換器，整合 RasterSVGConverter。
-    """
     def __init__(self, settings_manager):
         self.settings = settings_manager
         self.converter = RasterSVGConverter(self.settings)
