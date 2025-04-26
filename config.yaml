@@ -1,0 +1,15 @@
+background_tolerance: 1.0
+blur_ksize: 3
+canny_high: 150
+canny_low: 50
+color_tolerance: 1
+group_by_color: true
+max_artifact_size: 0.02
+output_filename: image.png
+potrace_alphamax: 1.0
+potrace_turdsize: 2
+remove_background: false
+svg_mode: canny
+threshold: 200
+tool_off_cmd: G0 Z1;
+tool_on_cmd: G0 Z0;

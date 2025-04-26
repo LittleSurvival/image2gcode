@@ -1,0 +1,5 @@
+PyQt5>=5.15
+pyyaml>=5.4
+pillow>=8.0
+PyQt5>=5.15.11
+opencv-python
