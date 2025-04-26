@@ -31,7 +31,7 @@
 ### Local
 
 1. **Install Rust and Cargo:** This project uses `svg2gcode-cli` which requires Rust's package manager, Cargo. Install Rust (which includes Cargo) by following the official instructions at [https://doc.rust-lang.org/cargo/getting-started/installation.html](https://doc.rust-lang.org/cargo/getting-started/installation.html).
-2. **Clone the repository:** `git clone <repository_url>` or download the source code.
+2. **Clone the repository:** `git clone [<repository_url>](https://github.com/LittleSurvival/image2gcode.git)` or download the source code.
 3. **(Optional) Create and activate a Python virtual environment:**
    ```bash
    python -m venv venv
