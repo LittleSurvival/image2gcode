@@ -19,7 +19,7 @@
 
 ## Preview
 
-![Application Preview](PLACEHOLDER_IMAGE_LINK)
+![Application Preview](https://github.com/LittleSurvival/image2gcode/blob/main/attachments/preview.png?raw=true)
 
 ## Prerequisites
 
