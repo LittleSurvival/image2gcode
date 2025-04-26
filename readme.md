@@ -17,6 +17,10 @@
 - Async processing to prevent UI freezing.
 - Error handling with user-friendly alerts.
 
+## Preview
+
+![Application Preview](PLACEHOLDER_IMAGE_LINK)
+
 ## Prerequisites
 
 - Python 3.7 or higher

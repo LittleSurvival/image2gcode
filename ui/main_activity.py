@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import (
     QGroupBox, QFormLayout, QSpinBox, QDoubleSpinBox, QCheckBox,
     QLineEdit, QComboBox, QPlainTextEdit, QProgressBar, QToolButton, QStyle
 )
-from PyQt5.QtGui import QPixmap, QFont
+from PyQt5.QtGui import QPixmap, QFont, QIcon
 
 from modules.image_loader import ImageLoader
 from modules.image_converter import ImageConverter
@@ -49,9 +49,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        # Set global Arial font
         self.setFont(QFont("Arial", 10))
-
         self.settings_manager = SettingsManager()
         self.current_image_path = None
 
@@ -262,8 +260,8 @@ class MainWindow(QMainWindow):
         try:
             ImageLoader.load_image(file_path)
             self.current_image_path = file_path
-            #set the name of output to input image basename.
-            self.output_name_edit.setText(os.path.basename(file_path))
+            # Set the name of output to input image basename without extension.
+            self.output_name_edit.setText(os.path.splitext(os.path.basename(file_path))[0])
             pixmap = QPixmap(file_path)
             pixmap = pixmap.scaled(self.image_label.size(),
                                    Qt.KeepAspectRatio,
