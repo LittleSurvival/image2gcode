@@ -26,10 +26,25 @@
 
 ### Local
 
-1. Clone the repository or download the source code.
-2. (Optional) Create a virtual environment: python -m venv venv source venv/bin/activate # On Windows use venv\Scripts\activate
-3. Install required packages: pip install -r requirements.txt
-4. Ensure the `output/` directory exists (it will be auto-created on first run).
+1. **Install Rust and Cargo:** This project uses `svg2gcode-cli` which requires Rust's package manager, Cargo. Install Rust (which includes Cargo) by following the official instructions at [https://doc.rust-lang.org/cargo/getting-started/installation.html](https://doc.rust-lang.org/cargo/getting-started/installation.html).
+2. **Clone the repository:** `git clone <repository_url>` or download the source code.
+3. **(Optional) Create and activate a Python virtual environment:**
+   ```bash
+   python -m venv venv
+   # On Linux/macOS:
+   source venv/bin/activate
+   # On Windows:
+   .\venv\Scripts\activate
+   ```
+4. **Install Python dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+5. **Install the SVG to G-code converter:**
+   ```bash
+   cargo install svg2gcode-cli
+   ```
+6. **Ensure the `output/` directory exists:** The application will attempt to create it automatically on the first run if it's missing.
 
 ### Docker
 
